@@ -1,5 +1,5 @@
 /**
- * ClickEvent
+ * @class ClickEvent
  * @description This class is responsible for creating a click event object
  * @param {Event} event
  * @returns {Object} ClickEvent
@@ -11,7 +11,7 @@ class ClickEvent {
         this.className = target.classList?.length
             ? Array.from(target.classList.join(" "))
             : target.className || null;
-        this.tagName = target.tagName
+        this.tagName = target.tagName;
         this.id = target.id || null;
         this.text = target.innerText || null;
         this.timestamp = new Date.toISOString();
