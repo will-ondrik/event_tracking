@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Tracking Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            height: 300vh; 
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            padding-bottom: 50px;
+        }
+        button, input, select, textarea {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .hover-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px 0;
+        }
+        .scrollable-section {
+            height: 200px;
+            overflow-y: scroll;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Tracking Test Page</h1>
+        
+        <button>Click Me</button>
+        <div class="hover-box">Hover Over Me</div>
+        <input type="text" placeholder="Type something...">
+        <select>
+            <option value="">Select an option</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Submit</button>
+        </form>
+        <textarea placeholder="Type here..."></textarea>
+        <div class="scrollable-section">
+            <p>Scroll inside this box to trigger a scroll event.</p>
+            <p style="height: 500px;"></p>
+        </div>
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+        
+        <button>Another Button</button>
+        <button>Yet Another Button</button>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+            <button type="submit">Submit Form</button>
+        </form>
+        <div style="height: 100vh; background-color: lightgray; margin-top: 20px;">
+            <p>Extra content for scrolling</p>
+        </div>
+        <div style="height: 100vh; background-color: lightcoral; margin-top: 20px;">
+            <p>More scrollable content</p>
+        </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
